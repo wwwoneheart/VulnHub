@@ -2,7 +2,7 @@
 - https://www.vulnhub.com/entry/acid-server,125/
 
 ## Walkthrough
-### Step 1
+### - Step 1
 nmap掃描虛擬機ip及port，發現位於33447/tcp是開啟狀態，service為http
 ### Step 2
 利用DirBuster暴力掃目錄，從cake.php中找出/Magic_Box
