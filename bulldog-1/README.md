@@ -17,15 +17,16 @@ We'll remove these in prod. It's not like a hacker can do anything with a hash
 > Literally run the app, give your account password
 
 用strings查看customPermissionApp，發現奇怪字眼  
-`SUPERultH
-imatePASH
-SWORDyouH
-CANTget`
+`SUPERultH  
+imatePASH  
+SWORDyouH  
+CANTget`  
 研究了一下，刪掉H之後:  
 `SUPERultimatePASSWORDyouCANTget`  
 得到一串很像是密碼的東西，但並不確定，su試試，先解決error問題  
 `python -c 'import pty;pty.spawn("/bin/bash")'`  
-嘗試登入root帳號，密碼登入成功，回到/root目錄發現congrats.txt文件
+嘗試登入root帳號，密碼登入成功，回到/root目錄發現congrats.txt文件  
+
 `cat congrats.txt
 Congratulations on completing this VM :D That wasn't so bad was it?
 
