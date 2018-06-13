@@ -16,7 +16,7 @@ nmap掃描虛擬機ip及port，發現位於33447/tcp是開啟狀態，service為
 
 查找用戶，發現三個可疑帳號acid、saman、root，嘗試找尋用戶的可疑文件  
 `$ cat /etc/passwd`  
-`$ find -user acid 2>/dev/null`  
+`$ find / -user acid 2>/dev/null`  
 發現pcapng可疑流量檔案，下載回本地查看  
 
 利用wireshark打開hint.pcapng，找到saman密碼1337hax0r  
