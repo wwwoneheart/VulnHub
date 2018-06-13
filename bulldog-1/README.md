@@ -13,20 +13,20 @@ DirBuster爆破目錄，發現在/dev/中的source code有提示
 從note中發現提示  
 > Literally run the app, give your account password
 用strings查看customPermissionApp，發現奇怪字眼  
-```SUPERultH
+`SUPERultH
 imatePASH
 SWORDyouH
-CANTget```  
+CANTget`
 研究了一下，刪掉H之後:  
 `SUPERultimatePASSWORDyouCANTget`  
 得到一串很像是密碼的東西，但並不確定，su試試，先解決error問題  
 `python -c 'import pty;pty.spawn("/bin/bash")'`  
 嘗試登入root帳號，密碼登入成功，回到/root目錄發現congrats.txt文件
-```cat congrats.txt
+`cat congrats.txt
 Congratulations on completing this VM :D That wasn't so bad was it?
 
 Let me know what you thought on twitter, I'm @frichette_n
 
 As far as I know there are two ways to get root. Can you find the other one?
 
-Perhaps the sequel will be more challenging. Until next time, I hope you enjoyed!```
+Perhaps the sequel will be more challenging. Until next time, I hope you enjoyed!`
