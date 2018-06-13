@@ -4,6 +4,9 @@
 ## Walkthrough
 ### Step 1
 nmap掃描虛擬機ip及port，發現位於33447/tcp是開啟狀態，service為http
+
+`$ sudo nmap -sP 172.16.71.0/24`
+`$ sudo nmap -p1-65535 -sV 172.16.71.208`
 ### Step 2
 利用DirBuster暴力掃目錄，從cake.php中找出/Magic_Box
 掃/Magic_Box，發現command.php
