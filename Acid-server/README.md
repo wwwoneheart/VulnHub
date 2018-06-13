@@ -3,10 +3,10 @@
 
 ## Walkthrough
 ### Step 1
-nmap掃描虛擬機ip及port，發現位於33447/tcp是開啟狀態，service為http
+> nmap掃描虛擬機ip及port，發現位於33447/tcp是開啟狀態，service為http
 ### Step 2
-利用DirBuster暴力掃目錄，從cake.php中找出/Magic_Box
-掃/Magic_Box，發現command.php
+> 利用DirBuster暴力掃目錄，從cake.php中找出/Magic_Box
+> 掃/Magic_Box，發現command.php
 ### Step 3
 首先ping172.16.71.1;id發現命令成功注入，嘗試獲取shell
 監聽3333port
