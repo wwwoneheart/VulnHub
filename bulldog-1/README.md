@@ -6,6 +6,7 @@ DirBuster爆破目錄，發現在/dev/中的source code有提示
 
 
 > Need these password hashes for testing. Django's default is too complex
+
 > We'll remove these in prod. It's not like a hacker can do anything with a hash
 
 
