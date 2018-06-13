@@ -6,8 +6,7 @@ DirBuster爆破目錄，發現在/dev/中的source code有提示
 
 
 > Need these password hashes for testing. Django's default is too complex
-
-> We'll remove these in prod. It's not like a hacker can do anything with a hash
+We'll remove these in prod. It's not like a hacker can do anything with a hash
 
 
 把註解中的password拿去sha1 decode，求出nick跟sarah的password，試探用database(sarah)去登/admin/，成功，但無編輯權限  
