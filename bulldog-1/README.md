@@ -1,7 +1,7 @@
 # VulnHub: bulldog-1
 - https://www.vulnhub.com/entry/bulldog-1,211/
 ## Walkthrough
-使用VirtualBox開啟虛擬機，可自動取得靶機ip，利用nmap掃port，http端口80、8080，ssh端口23皆為開放狀態
+使用VirtualBox開啟虛擬機，可自動取得靶機ip，利用nmap掃port，http端口80、8080，ssh端口23皆為開放狀態。
 DirBuster爆破目錄，發現在/dev/中的source code有提示
 > <!--Need these password hashes for testing. Django's default is too complex-->
 > <!--We'll remove these in prod. It's not like a hacker can do anything with a hash-->
